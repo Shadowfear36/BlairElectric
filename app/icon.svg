@@ -1,38 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <defs>
-    <clipPath id="left-clip">
-      <rect width="50" height="100"/>
-    </clipPath>
-    <clipPath id="right-clip">
-      <rect x="50" width="50" height="100"/>
-    </clipPath>
-  </defs>
-  <!-- Blue left half -->
-  <rect width="100" height="100" rx="18" fill="#2b2f78"/>
-  <!-- White right half -->
-  <rect x="50" width="50" height="100" fill="#ffffff"/>
-  <!-- Round right corners only by masking with a clipped rect -->
-  <rect x="50" width="50" height="100" rx="0" fill="#ffffff" clip-path="url(#right-clip)"/>
-  <!-- Rounded corners on the full shape via a border rect -->
-  <rect width="100" height="100" rx="18" fill="none"/>
-
-  <!-- "B" in white on the blue side -->
-  <text
-    x="10" y="73"
-    font-family="Arial Black, Impact, sans-serif"
-    font-weight="900"
-    font-size="66"
-    fill="#ffffff"
-    clip-path="url(#left-clip)"
-  >BE</text>
-
-  <!-- "E" in blue on the white side -->
-  <text
-    x="10" y="73"
-    font-family="Arial Black, Impact, sans-serif"
-    font-weight="900"
-    font-size="66"
-    fill="#2b2f78"
-    clip-path="url(#right-clip)"
-  >BE</text>
+  <rect width="100" height="100" rx="16" fill="#000000"/>
+  <text x="6" y="74" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="70" fill="#2b2f78">B</text>
+  <text x="50" y="74" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="70" fill="#ffffff">E</text>
 </svg>
