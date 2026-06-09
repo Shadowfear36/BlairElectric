@@ -104,7 +104,7 @@ export default function EmploymentPage() {
                 </a>{" "}
                 or call{" "}
                 <a href="tel:+15597848658" className="text-brand-600 font-semibold">
-                  (559) 784-8658
+                  (559) 784-VOLT
                 </a>.
               </p>
               <button onClick={() => setSubmitted(false)} className="text-sm text-muted hover:text-foreground underline">

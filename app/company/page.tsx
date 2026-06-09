@@ -113,7 +113,7 @@ export default function CompanyPage() {
                 <li>
                   <a href="tel:+15597848658" className="flex items-center gap-3 font-semibold text-foreground hover:text-brand-600 transition-colors">
                     <Phone size={15} className="text-brand-500 flex-shrink-0" />
-                    (559) 784-8658
+                    (559) 784-VOLT
                   </a>
                 </li>
                 <li className="flex items-center gap-3 text-sm text-muted">

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Blair Electric Services",
   },
   description:
-    "Agricultural, commercial, and industrial electrical contracting throughout California's Central Valley. Pump controls, PLC systems, thermographic imaging, panel design, and more. LIC# 778452. Call (559) 784-8658.",
+    "Agricultural, commercial, and industrial electrical contracting throughout California's Central Valley. Pump controls, PLC systems, thermographic imaging, panel design, and more. LIC# 778452. Call (559) 784-VOLT.",
   keywords: [
     "electrical contractor", "agricultural electrical", "commercial electrical", "industrial electrical",
     "pump controls", "PLC controls", "thermographic imaging", "panel design", "data communications",

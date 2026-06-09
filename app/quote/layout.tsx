@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Request a Quote",
   description:
-    "Request a free estimate from Blair Electric Services, Inc. for agricultural, commercial, or industrial electrical work in California's Central Valley. LIC# 778452. Call (559) 784-8658 or fill out our online form.",
+    "Request a free estimate from Blair Electric Services, Inc. for agricultural, commercial, or industrial electrical work in California's Central Valley. LIC# 778452. Call (559) 784-VOLT or fill out our online form.",
   alternates: { canonical: "https://www.blair-electric.com/quote" },
   openGraph: {
     title: "Request a Quote | Blair Electric Services",

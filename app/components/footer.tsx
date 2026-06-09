@@ -98,7 +98,7 @@ export default function Footer() {
                   className="flex items-center gap-2.5 text-white font-bold text-lg hover:text-brand-300 transition-colors"
                 >
                   <Phone size={16} className="text-brand-400 flex-shrink-0" />
-                  (559) 784-8658
+                  (559) 784-VOLT
                 </a>
               </li>
               <li className="flex items-center gap-2.5 text-sm text-slate-400">

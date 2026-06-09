@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = {
   title: "Blair Electric Services, Inc. | Electrical Contractor — Porterville, CA",
   description:
-    "Agricultural, commercial, and industrial electrical contracting throughout California's Central Valley. Pump controls, PLC systems, thermographic imaging, and more. LIC# 778452. Call (559) 784-8658.",
+    "Agricultural, commercial, and industrial electrical contracting throughout California's Central Valley. Pump controls, PLC systems, thermographic imaging, and more. LIC# 778452. Call (559) 784-VOLT.",
 }
 
 const SERVICES = [
@@ -86,7 +86,7 @@ export default function HomePage() {
                 className="inline-flex items-center gap-2 rounded-full bg-brand-500 hover:bg-brand-600 px-7 py-3.5 text-base font-semibold text-white transition-colors"
               >
                 <Phone size={17} />
-                (559) 784-8658
+                (559) 784-VOLT
               </a>
               <Link
                 href="/quote"
@@ -221,7 +221,7 @@ export default function HomePage() {
               href="tel:+15597848658"
               className="inline-flex items-center gap-2 rounded-full bg-white text-brand-600 hover:bg-brand-50 px-6 py-3 text-sm font-semibold transition-colors"
             >
-              <Phone size={15} /> (559) 784-8658
+              <Phone size={15} /> (559) 784-VOLT
             </a>
             <Link
               href="/quote"

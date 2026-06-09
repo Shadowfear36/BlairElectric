@@ -43,7 +43,7 @@ export default function QuotePage() {
             Fill out the form below and we&rsquo;ll get back to you promptly.
             Or call us directly at{" "}
             <a href="tel:+15597848658" className="text-brand-400 hover:text-brand-300 font-semibold">
-              (559) 784-8658
+              (559) 784-VOLT
             </a>.
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function QuotePage() {
                 </a>{" "}
                 or call{" "}
                 <a href="tel:+15597848658" className="text-brand-600 font-semibold">
-                  (559) 784-8658
+                  (559) 784-VOLT
                 </a>.
               </p>
               <button
@@ -147,7 +147,7 @@ export default function QuotePage() {
             </div>
             <div>
               <p className="text-xs text-muted font-semibold uppercase tracking-wide">Call Us</p>
-              <p className="font-bold text-foreground">(559) 784-8658</p>
+              <p className="font-bold text-foreground">(559) 784-VOLT</p>
             </div>
           </a>
           <a

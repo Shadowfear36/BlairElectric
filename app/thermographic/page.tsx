@@ -165,7 +165,7 @@ export default function ThermographicPage() {
               href="tel:+15597848658"
               className="inline-flex items-center gap-2 rounded-full bg-white text-brand-600 hover:bg-brand-50 px-7 py-3.5 text-base font-semibold transition-colors"
             >
-              <Phone size={17} /> (559) 784-8658
+              <Phone size={17} /> (559) 784-VOLT
             </a>
             <Link
               href="/quote"

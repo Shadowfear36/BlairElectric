@@ -103,7 +103,7 @@ export default function Header() {
               className="flex items-center gap-1.5 rounded-full bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600 transition-colors whitespace-nowrap"
             >
               <Phone size={14} />
-              (559) 784-8658
+              (559) 784-VOLT
             </a>
           </nav>
 
@@ -188,7 +188,7 @@ export default function Header() {
                 className="flex items-center justify-center gap-2 w-full rounded-full bg-brand-500 hover:bg-brand-600 px-4 py-3 text-sm font-semibold text-white transition-colors"
               >
                 <Phone size={16} />
-                (559) 784-8658
+                (559) 784-VOLT
               </a>
               <div className="flex items-center justify-between">
                 <span className="text-xs text-muted">{dark ? "Dark mode" : "Light mode"}</span>

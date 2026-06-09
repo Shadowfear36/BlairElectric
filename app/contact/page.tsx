@@ -1,10 +1,10 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import { Phone, MapPin, Printer, Mail } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Blair Electric Services, Inc. in Porterville, CA. Call (559) 784-8658, fax (559) 784-8657, or email Bruce@blair-electric.com. Located at 1829 Thunderbolt Dr., Porterville, CA 93257. Serving Tulare County and the Central Valley.",
+    "Contact Blair Electric Services, Inc. in Porterville, CA. Call (559) 784-VOLT, fax (559) 784-8657, or email Bruce@blair-electric.com. Located at 1829 Thunderbolt Dr., Porterville, CA 93257. Serving Tulare County and the Central Valley.",
   alternates: { canonical: "https://www.blair-electric.com/contact" },
   openGraph: {
     title: "Contact Blair Electric Services | Porterville, CA",
@@ -47,7 +47,7 @@ export default function ContactPage() {
               {
                 icon: Phone,
                 label: "Phone",
-                content: <a href="tel:+15597848658" className="text-2xl font-black text-foreground hover:text-brand-600 transition-colors">(559) 784-8658</a>,
+                content: <a href="tel:+15597848658" className="text-2xl font-black text-foreground hover:text-brand-600 transition-colors">(559) 784-VOLT</a>,
               },
               {
                 icon: Printer,
@@ -119,7 +119,7 @@ export default function ContactPage() {
                 href="tel:+15597848658"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 hover:bg-brand-600 px-6 py-3.5 text-base font-semibold text-white transition-colors"
               >
-                <Phone size={17} /> (559) 784-8658
+                <Phone size={17} /> (559) 784-VOLT
               </a>
               <a
                 href="mailto:Bruce@blair-electric.com"
