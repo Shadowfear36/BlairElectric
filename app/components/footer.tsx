@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="lg:col-span-1 flex flex-col gap-5">
             <span className="inline-block bg-white rounded px-2 py-1">
               <Image
-                src="/blairelectric-logo.jpg"
+                src="/blairelectric-logo.png"
                 alt="Blair Electric Services, Inc."
                 width={180}
                 height={40}

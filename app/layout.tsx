@@ -93,7 +93,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               description:
                 "Agricultural, commercial, and industrial electrical contracting in California's Central Valley since 2000.",
               url: BASE_URL,
-              logo: `${BASE_URL}/blairelectric-logo.jpg`,
+              logo: `${BASE_URL}/blairelectric-logo.png`,
               image: `${BASE_URL}/og-image.jpg`,
               telephone: "+15597848658",
               faxNumber: "+15597848657",

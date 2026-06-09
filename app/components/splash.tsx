@@ -57,7 +57,7 @@ export default function SplashScreen() {
       >
         <span className="block bg-white rounded-xl px-6 py-4 shadow-2xl">
           <Image
-            src="/blairelectric-logo.jpg"
+            src="/blairelectric-logo.png"
             alt="Blair Electric Services, Inc."
             width={260}
             height={58}

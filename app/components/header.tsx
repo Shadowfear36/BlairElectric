@@ -69,7 +69,7 @@ export default function Header() {
           <Link href="/" className="flex-shrink-0 flex items-center" onClick={close}>
             <span className="block bg-white rounded px-2 py-1">
               <Image
-                src="/blairelectric-logo.jpg"
+                src="/blairelectric-logo.png"
                 alt="Blair Electric Services, Inc."
                 width={180}
                 height={40}
@@ -151,7 +151,7 @@ export default function Header() {
             {/* Drawer header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-border">
               <Image
-                src="/blairelectric-logo.jpg"
+                src="/blairelectric-logo.png"
                 alt="Blair Electric Services, Inc."
                 width={160}
                 height={36}
