@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode for Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --surface: #ffffff;
+  --border: #e2e0db;
+  --muted: #6b7280;
+}
+
+.dark {
+  --background: #111214;
+  --foreground: #ededed;
+  --surface: #1c1e21;
+  --border: #2d3139;
+  --muted: #9ca3af;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Blair Electric brand blue — sampled from logo */
+  --color-brand-50:  #eeeef8;
+  --color-brand-100: #d4d5ef;
+  --color-brand-200: #b0b2e0;
+  --color-brand-300: #8588cc;
+  --color-brand-400: #5a5eb5;
+  --color-brand-500: #2b2f78;
+  --color-brand-600: #22256a;
+  --color-brand-700: #1a1c52;
+  --color-brand-800: #13153d;
+  --color-brand-900: #0c0e2a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
