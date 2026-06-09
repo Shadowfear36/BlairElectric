@@ -12,7 +12,7 @@ const BASE_URL = "https://www.blair-electric.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Blair Electric Services, Inc. | Electrical Contractor � Porterville, CA",
+    default: "Blair Electric Services, Inc. | Electrical Contractor — Porterville, CA",
     template: "%s | Blair Electric Services",
   },
   description:
@@ -20,29 +20,48 @@ export const metadata: Metadata = {
   keywords: [
     "electrical contractor", "agricultural electrical", "commercial electrical", "industrial electrical",
     "pump controls", "PLC controls", "thermographic imaging", "panel design", "data communications",
-    "Porterville CA", "Central Valley", "California", "variable frequency drives", "motor starters",
-    "fiber optic cabling", "feed mill electrical", "food processing electrical", "LIC 778452",
+    "Porterville CA", "Tulare County", "Central Valley", "California electrician",
+    "variable frequency drives", "motor starters", "fiber optic cabling",
+    "feed mill electrical", "food processing electrical", "LIC 778452",
   ],
   authors: [{ name: "Blair Electric Services, Inc." }],
   creator: "Blair Electric Services, Inc.",
   publisher: "Blair Electric Services, Inc.",
-  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
   alternates: { canonical: BASE_URL },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: BASE_URL,
     siteName: "Blair Electric Services, Inc.",
-    title: "Blair Electric Services, Inc. | Electrical Contractor � Porterville, CA",
+    title: "Blair Electric Services, Inc. | Electrical Contractor — Porterville, CA",
     description:
-      "Agricultural, commercial, and industrial electrical contracting in California's Central Valley. LIC# 778452.",
-    images: [{ url: "/blairelectric-logo.jpg", width: 1200, height: 263, alt: "Blair Electric Services, Inc." }],
+      "Agricultural, commercial, and industrial electrical contracting in California's Central Valley. LIC# 778452. Serving Porterville, Visalia, Tulare, and surrounding areas.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Blair Electric Services, Inc. — Central Valley Electrical Contractor",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blair Electric Services, Inc. | Electrical Contractor",
-    description: "Agricultural, commercial, and industrial electrical contracting throughout California's Central Valley.",
-    images: ["/blairelectric-logo.jpg"],
+    title: "Blair Electric Services, Inc. | Electrical Contractor — Porterville, CA",
+    description:
+      "Agricultural, commercial, and industrial electrical contracting throughout California's Central Valley. LIC# 778452.",
+    images: ["/og-image.jpg"],
   },
   category: "Electrical Contracting",
 };
@@ -55,7 +74,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       suppressHydrationWarning
     >
       <head>
-        {/* Theme init � runs before paint to prevent flash */}
+        {/* Theme init — runs before paint to prevent flash */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark')}})()`,
@@ -70,8 +89,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               "@type": "ElectricalContractor",
               "@id": BASE_URL,
               name: "Blair Electric Services, Inc.",
-              description: "Agricultural, commercial, and industrial electrical contracting in California's Central Valley.",
+              description:
+                "Agricultural, commercial, and industrial electrical contracting in California's Central Valley since 2000.",
               url: BASE_URL,
+              logo: `${BASE_URL}/blairelectric-logo.jpg`,
+              image: `${BASE_URL}/og-image.jpg`,
               telephone: "+15597848658",
               faxNumber: "+15597848657",
               email: "Bruce@blair-electric.com",
@@ -85,8 +107,25 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 addressCountry: "US",
               },
               geo: { "@type": "GeoCoordinates", latitude: 36.065, longitude: -119.017 },
-              areaServed: { "@type": "AdministrativeArea", name: "California Central Valley" },
-              hasCredential: "LIC# 778452",
+              areaServed: [
+                { "@type": "City", name: "Porterville" },
+                { "@type": "City", name: "Visalia" },
+                { "@type": "City", name: "Tulare" },
+                { "@type": "City", name: "Hanford" },
+                { "@type": "City", name: "Fresno" },
+                { "@type": "AdministrativeArea", name: "Tulare County" },
+                { "@type": "AdministrativeArea", name: "Kings County" },
+                { "@type": "AdministrativeArea", name: "Fresno County" },
+              ],
+              hasCredential: "California Electrical Contractor License #778452",
+              priceRange: "$$",
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                opens: "07:00",
+                closes: "17:00",
+              },
+              sameAs: [],
             }),
           }}
         />

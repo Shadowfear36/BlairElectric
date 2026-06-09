@@ -2,9 +2,16 @@
 import { Phone, MapPin, Printer, Mail } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact Us",
   description:
-    "Contact Blair Electric Services, Inc. in Porterville, CA. Call (559) 784-8658, fax (559) 784-8657, or email Bruce@blair-electric.com. Located at 1829 Thunderbolt Dr., Porterville, CA 93257.",
+    "Contact Blair Electric Services, Inc. in Porterville, CA. Call (559) 784-8658, fax (559) 784-8657, or email Bruce@blair-electric.com. Located at 1829 Thunderbolt Dr., Porterville, CA 93257. Serving Tulare County and the Central Valley.",
+  alternates: { canonical: "https://www.blair-electric.com/contact" },
+  openGraph: {
+    title: "Contact Blair Electric Services | Porterville, CA",
+    description:
+      "Reach Blair Electric Services by phone, fax, or email. Located in Porterville, CA — serving agricultural, commercial, and industrial clients throughout the Central Valley.",
+    url: "https://www.blair-electric.com/contact",
+  },
 }
 
 const STAFF = [

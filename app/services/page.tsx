@@ -7,9 +7,16 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Electrical Services",
   description:
-    "Blair Electric Services offers agricultural, commercial, and industrial electrical contracting — pump controls, PLC systems, thermographic imaging, panel design, data communications, and lighting throughout California's Central Valley.",
+    "Blair Electric Services offers agricultural, commercial, and industrial electrical contracting — pump controls, PLC systems, thermographic imaging, panel design, data communications, and lighting throughout California's Central Valley. LIC# 778452.",
+  alternates: { canonical: "https://www.blair-electric.com/services" },
+  openGraph: {
+    title: "Electrical Services | Blair Electric Services — Porterville, CA",
+    description:
+      "Comprehensive electrical contracting for agricultural, commercial, and industrial clients in the Central Valley. Pump controls, PLC systems, thermographic imaging, custom panel design, and more.",
+    url: "https://www.blair-electric.com/services",
+  },
 }
 
 const SECTORS = [

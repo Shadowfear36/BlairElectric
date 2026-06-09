@@ -6,7 +6,14 @@ import { Thermometer, ArrowRight, Phone, ShieldCheck, Zap, TrendingDown, Activit
 export const metadata: Metadata = {
   title: "Thermographic Imaging",
   description:
-    "Blair Electric Services offers professional thermographic imaging using infrared cameras to detect overloaded circuits, failing electrical components, and heat anomalies — before they cause costly downtime. Serving California's Central Valley.",
+    "Blair Electric Services offers professional thermographic imaging using infrared cameras to detect overloaded circuits, failing electrical components, and heat anomalies before they cause costly downtime or fires. Non-invasive — no shutdown required. Serving California's Central Valley.",
+  alternates: { canonical: "https://www.blair-electric.com/thermographic" },
+  openGraph: {
+    title: "Thermographic Imaging Services | Blair Electric — Central Valley",
+    description:
+      "Infrared thermal inspections to catch failing electrical components before they cause downtime, fires, or costly repairs. Non-invasive, no shutdown required. Schedule an inspection today.",
+    url: "https://www.blair-electric.com/thermographic",
+  },
 }
 
 const BENEFITS = [

@@ -4,9 +4,16 @@ import Link from "next/link"
 import { MapPin, Phone, Printer, Mail, ArrowRight, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Company",
+  title: "Our Company",
   description:
-    "Blair Electric Services, Inc. was formed in 2000 and incorporated in 2006. Owner Bruce Blair brings over 20 years of electrical expertise serving agricultural, commercial, and industrial clients throughout California's Central Valley.",
+    "Blair Electric Services, Inc. was formed in 2000 and incorporated in 2006. Owner Bruce Blair brings over 20 years of electrical expertise serving agricultural, commercial, and industrial clients throughout California's Central Valley. LIC# 778452.",
+  alternates: { canonical: "https://www.blair-electric.com/company" },
+  openGraph: {
+    title: "About Blair Electric Services | Founded 2000 — Porterville, CA",
+    description:
+      "Learn about Blair Electric Services — a premier Central Valley electrical contractor since 2000. Owner Bruce Blair leads a team dedicated to quality, integrity, and quick response.",
+    url: "https://www.blair-electric.com/company",
+  },
 }
 
 const TEAM = [
