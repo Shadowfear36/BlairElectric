@@ -120,10 +120,18 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-slate-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex justify-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
             <p className="text-slate-500 text-xs">
               &copy; {new Date().getFullYear()} Blair Electric Services, Inc. All Rights Reserved.
             </p>
+            <a
+              href="https://rhodai.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-600 hover:text-slate-400 text-xs transition-colors"
+            >
+              Designed &amp; Built by <span className="text-slate-400 font-semibold">Rhodai.AI</span>
+            </a>
           </div>
         </div>
       </div>
