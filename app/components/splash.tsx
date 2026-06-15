@@ -8,19 +8,34 @@ export default function SplashScreen() {
   const [fading, setFading] = useState(false)
 
   useEffect(() => {
-    // Only show once per session
     if (sessionStorage.getItem("splashShown")) {
       setVisible(false)
       return
     }
     sessionStorage.setItem("splashShown", "1")
 
-    const fadeTimer = setTimeout(() => setFading(true), 1200)
-    const hideTimer = setTimeout(() => setVisible(false), 1700)
+    let fadeTimer: ReturnType<typeof setTimeout>
+    let hideTimer: ReturnType<typeof setTimeout>
+
+    const dismiss = () => {
+      fadeTimer = setTimeout(() => setFading(true), 100)
+      hideTimer = setTimeout(() => setVisible(false), 600)
+    }
+
+    // Wait for all assets to load, but show for at least 1s
+    const minTimer = setTimeout(() => {
+      if (document.readyState === "complete") {
+        dismiss()
+      } else {
+        window.addEventListener("load", dismiss, { once: true })
+      }
+    }, 1000)
 
     return () => {
+      clearTimeout(minTimer)
       clearTimeout(fadeTimer)
       clearTimeout(hideTimer)
+      window.removeEventListener("load", dismiss)
     }
   }, [])
 
