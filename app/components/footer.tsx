@@ -125,7 +125,7 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} Blair Electric Services, Inc. All Rights Reserved.
             </p>
             <a
-              href="https://rhodai.ai"
+              href="https://rhodai.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-600 hover:text-slate-400 text-xs transition-colors"
